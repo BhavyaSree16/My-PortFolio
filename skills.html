@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="https://static.thenounproject.com/png/3293529-200.png">
+    
+    <title>Skills</title>
+    <style>
+        body{
+            background-color: #ffffff;
+            font-family: 'Caudex', serif;
+        }
+        .list{
+            list-style: none;
+            text-decoration: none;
+            display: inline-block;
+            padding: 7px;
+            font-size: 25px;
+            margin: 1px 5px 1px 3px;
+            color: black;
+        }
+        a li:hover{
+            color: orangered;
+            border-radius: 5px;
+        }
+        .container{
+            width: 1px thin black;
+            height: 550px;
+            width: 80%;
+            background-color: #1C64B0;
+            margin-left: 150px;
+            display: flex;
+            flex-direction: column; 
+            border-radius: 8px;
+            animation: fadeInUp 1s ease; /* Apply the animation here */
+        }
+        .card{
+            display: flex;
+            flex-direction: row ;
+            justify-content: flex-start;
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+
+        /* Define the fadeInUp animation */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html"><li class="list">Home</li></a>
+            <a href="education.html"><li class="list">Education</li></a>
+            <a href="skills.html"><li class="list">Skills</li></a>
+            <a href="projects.html"><li class="list">Projects</li></a>
+        </ul>
+    </nav>
+    <div class="container">
+       
+        <div class="card">
+            <img src="HTML.png" alt="Html Css" style="width: 350px;height: 200px;margin: 20px;border-radius: 25px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjqtZO0pXqTYZnw8kIJjtdDZLC9gc-vvIHOQ&usqp=CAU" alt="Bootstrap" style="margin: 20px;border-radius: 25px;">
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="website icon" href="https://static.vecteezy.com/system/resources/thumbnails/001/486/411/small/open-book-icon-free-vector.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    
+    <title>Education</title>
+
+    <style>
+        body{
+            font-family: 'Caudex', serif;
+        }
+        .list{
+            list-style: none;
+            text-decoration: none;
+            display: inline-block;
+            padding: 7px;
+            font-size: 25px;
+            margin: 1px 5px 1px 3px;
+            color: black;
+        }
+        a li:hover{
+            color: orangered;
+            border-radius: 5px;
+        }
+        .container{
+            width: 1px thin black;
+            height: 550px;
+            width: 80%;
+            background-color: #1C64B0;
+            margin-left: 150px;
+            display: flex;
+            flex-direction: column; 
+            border-radius: 5px;
+            animation: fadeInUp 1s ease;
+        }
+        .card1{
+            max-height: 3000px;
+            max-width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            margin-left: 100px;
+        }
+        .card2{
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+        }
+        
+        /* Animation styles */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            animation: fadeInUp 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html"><li class="list">Home</li></a>
+            <a href="education.html"><li class="list">Education</li></a>
+            <a href="skills.html"><li class="list">Skills</li></a>
+            <a href="projects.html"><li class="list">Projects</li></a>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 style="color: white;margin-left: 50px;">University</h1>
+        <div class="card1 animated">
+            <div>
+                <img src="SRM LOGO.png" alt="SRMAP" style="border-radius: 10px;">
+            </div>
+            <div style="margin-left: 25px;color: white;font-size: 20px;">
+                
+                    Computer Science and Engineering <br>  
+                    2022 - 2026 <br>
+                    Courses : <br>
+                    <ul>
+                        <li >Web Development</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Machine Learning</li>
+                    </ul>          
+            </div>
+        </div>
+
+        <h1 style="color: white;margin-left: 50px;">Online Learning Platforms</h1>
+        <div class="card2 animated">
+
+            <div>
+                <img src="https://indiatechnologynews.in/wp-content/uploads/2021/09/nxt-wave.png" alt="Nxt Wave CCBP 4.0" style="height: 150px;width: 300px;margin-left: 90px;border-radius: 15px;">
+            </div>
+
+            <div>
+                <ul>
+                    <li style="font-size: 20px;color: white;margin-left: 25px;">Python</li>
+                    <li style="font-size: 20px;color: white;margin-left: 25px;">SQL</li>
+                    <li style="font-size: 20px;color: white;margin-left: 25px;">Node.js && React.js</li>
+                    <li style="font-size: 20px;color: white;margin-left: 25px;">Data Structures and Algorithms</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        // Adding animation class to elements
+        const animatedElements = document.querySelectorAll('.animated');
+        animatedElements.forEach(element => {
+            element.classList.add('fadeInUp');
+        });
+    </script>
+</body>
+</html>

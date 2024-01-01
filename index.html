@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPw3AfTmV6UXZGmaQmOdb185WdoONONsysqg&usqp=CAU">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    
+    <title>Bhavya Sree</title>
+
+    <style>
+        li {
+            list-style: none;
+            text-decoration: none;
+            display: inline-block;
+            padding: 7px;
+            font-size: 25px;
+            margin: 1px 5px 1px 3px;
+            color: black;
+        }
+        
+        a li:hover {
+            color: orangered;
+            border-radius: 5px;
+            
+        }
+        a li:active{
+            text-decoration: solid;
+        }
+        body {
+            background-color: #ffffff;
+            font-family: 'Caudex', serif;
+            margin: 0;
+            padding: 0;
+        }   
+        
+        nav {
+            display: flex;
+            align-items: center;
+        } 
+        
+        .container {
+            width: 1px thin black;
+            height: 550px;
+            width: 80%;
+            background-color: #1C64B0;
+            margin-left: 150px;
+            display: flex;
+            flex-direction: row;
+            border-radius: 5px;
+        }
+
+        /* Animation styles */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            animation: fadeInUp 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="education.html"><li>Education</li></a>
+            <a href="skills.html"><li>Skills</li></a>
+            <a href="projects.html"><li>Projects</li></a>
+        </ul>
+    </nav>
+    <div class="container animated">
+        <div style="font-size: 25px;display: flex;flex-direction: column;">
+            <p style="font-size: 40px;color: #ffffff;margin-left: 60px;">Hey I'm <br>Bhavya Sree  </p>
+            
+            <p style="max-width: 700px;max-height: 100px;margin-left: 50px;color: #ffffff;">
+                Hello, I'm Bhavya Sree, a passionate Bachelor's degree student in Artificial Intelligence and Machine Learning at the University of SRM AP. I am passionate about leveraging technology to solve complex problems and create innovative solutions. And I'm a huge fan of coding challenges and hands-on projects.
+            </p>
+        </div>
+        <div style="margin-top: 80px;margin-left: 100px;">
+            <img src="bhavya3.jpg" alt="Bhavya" style="height: 400px;width: 300px;border-radius: 5px;">
+        </div> 
+    </div>
+</body>
+</html>

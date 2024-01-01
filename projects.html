@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="website icon" href="https://cdn-icons-png.flaticon.com/512/1087/1087815.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    
+    <title>Projects</title>
+
+    <style>
+        body{
+            font-family: 'Caudex', serif;
+        }
+        .list{
+            list-style: none;
+            text-decoration: none;
+            display: inline-block;
+            padding: 7px;
+            font-size: 25px;
+            margin: 1px 5px 1px 3px;
+            color: black;
+        }
+        a li:hover{
+            color: orangered;
+            border-radius: 5px;
+        }
+        .container{
+            width: 1px thin black;
+            height: 550px;
+            width: 80%;
+            background-color: #1C64B0;
+            margin-left: 150px;
+            display: flex;
+            flex-direction: column; 
+            border-radius: 5px;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .card1{
+            height: 200px;
+            width: 250px;
+            padding: 2px;
+            border: 3px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 100px;
+            margin-top: 30px;
+            font-size: larger;
+            background-color: white;
+        }
+        
+        /* Animation styles */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            animation: fadeInUp 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html"><li class="list">Home</li></a>
+            <a href="education.html"><li class="list">Education</li></a>
+            <a href="skills.html"><li class="list">Skills</li></a>
+            <a href="projects.html"><li class="list">Projects</li></a>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="card1">
+            <img src="https://azure.microsoft.com/svghandler/app-service-static/?width=600&height=315" alt="MY Static Website">
+            <hr style="width: 100%">
+            <a href="https://bhavyasree16.github.io/My-Static-Website/" style="text-decoration: none;color: black;font-weight: 800;"><span style="margin-left: 47px;margin-bottom: 15px;">My Static Website</span></a>
+        </div>
+    </div>
+    
+    <script>
+        // Adding animation class to elements
+        const animatedElements = document.querySelectorAll('.animated');
+        animatedElements.forEach(element => {
+            element.classList.add('fadeInUp');
+        });
+    </script>
+</body>
+</html>
